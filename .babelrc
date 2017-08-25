@@ -1,0 +1,28 @@
+{
+    "plugins": [
+        "transform-flow-strip-types"
+    ],
+    "presets": [
+        "react"
+    ],
+    "env": {
+        "production": {
+            "plugins": [
+                "external-helpers"
+            ],
+            "presets": [
+                [
+                    "e2015",
+                    {
+                        "modules": false
+                    }
+                ]
+            ]
+        },
+        "test": {
+            "presets": [
+                "2015"
+            ]
+        }
+    }
+}
